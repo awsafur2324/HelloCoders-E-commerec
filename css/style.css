@@ -5713,3 +5713,19 @@ img.mfp-img {
 .mfp-bg {
   opacity: 0.8 !important;
 }
+
+
+
+/* Our Custom Desgins */
+.card_image {
+  transition: all .2s;
+}
+.card_images{
+  transition: all .2s !important;
+}
+.card_images:hover .card_image{
+  transform: scale(1.1);
+}
+.img-fluid{
+  transition: all .3s !important;
+}
