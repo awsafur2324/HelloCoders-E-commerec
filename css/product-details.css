@@ -54,6 +54,37 @@
   width: 100%;
 }
 
+.size-selector {
+  padding: 5px;
+  text-align: center;
+}
+
+.price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.new-price {
+  color: #004dda;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.discount {
+  padding: 1px 3px;
+  background: red;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.old-price {
+  font-weight: 500;
+  text-decoration: line-through;
+  font-size: 17px;
+}
+
 /* Product head sections style end */
 
 /* Product details section start */
@@ -139,6 +170,18 @@ th {
 
 .reviews-wrapper p {
   text-align: justify;
+}
+
+@media only screen and (max-width: 576px) {
+  .reviews-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .reviews-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Reviews Section end */
