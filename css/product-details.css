@@ -47,15 +47,52 @@
   justify-content: center;
   align-items: center;
   padding: 0 10px;
-  max-width: 500px;
+  max-width: 400px;
   margin: auto;
 }
 .product-image-wrapper img {
   width: 100%;
 }
 
+/* Product head sections style end */
+
+/* Product details section start */
+.product-details-wrapper {
+  padding: 50px 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+}
+.product-details-wrapper p {
+  margin-bottom: 20px;
+}
+
+.product-details p {
+  text-align: justify;
+}
+
+.rating-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.rating-wrapper small {
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.product-code {
+  font-weight: 500;
+}
+
 .size-selector {
-  padding: 5px;
+  padding: 4px;
   text-align: center;
 }
 
@@ -77,45 +114,38 @@
   color: #fff;
   border-radius: 3px;
   font-weight: 500;
+  font-size: 10px;
 }
 
 .old-price {
   font-weight: 500;
   text-decoration: line-through;
-  font-size: 17px;
+  color: #999999;
 }
 
-/* Product head sections style end */
-
-/* Product details section start */
-.product-details-wrapper {
-  padding: 50px 0;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 50px;
-}
-.product-details-wrapper p {
-  margin-bottom: 20px;
-}
-
-.rating-wrapper {
-  display: flex;
-  gap: 8px;
-}
-
-.rating-wrapper small {
-  font-weight: 500;
-  color: #5a5a5a;
-}
-
-.rating {
+.quantity-area {
   display: flex;
   align-items: center;
+  width: fit-content;
+  border: 1px solid #979797;
 }
 
-.product-code {
+.increment-button,
+.decrement-button {
+  border: none;
+  font-size: 18px;
   font-weight: 500;
+}
+
+.increment-button:active,
+.decrement-button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .product-details-wrapper {
+    flex-direction: column;
+  }
 }
 
 /* Product details section end */
@@ -157,6 +187,18 @@ th {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+}
+
+.reviews-sorting-section label {
+  font-size: 18px;
+  color: #111;
+  margin-right: 4px;
+}
+
+.reviews-sorting-section select {
+  padding: 2px 5px;
+  text-align: center;
+  color: #5a5a5a;
 }
 
 .clearfix {

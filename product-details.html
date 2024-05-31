@@ -163,14 +163,32 @@
       <!-- product page banner start -->
 
       <!-- Product section start here -->
-      <section class="product-head-section">
-        <div class="container">
-          <h3 class="product-title">Armor Air X Fear</h3>
-          <div class="product-image-wrapper">
-            <img src="./img/products/shoes/1.jpg" alt="" />
+      <section>
+        <div id="carousel-home" class="product-head-section">
+          <div class="container">
+            <div class="product-banner-wrapper">
+              <h3 class="product-title">Armor Air X Fear</h3>
+              <div class="owl-carousel owl-theme">
+                <div class="owl-slide cover">
+                  <div>
+                    <div class="product-image-wrapper">
+                      <img src="./img/products/shoes/1.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!--/owl-slide-->
+                <div class="owl-slide cover">
+                  <div class="product-image-wrapper">
+                    <img src="./img/products/shoes/1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <div id="icon_drag_mobile"></div>
         </div>
       </section>
+
       <!-- Product section end here -->
 
       <!-- product details section start  -->
@@ -213,8 +231,8 @@
                   <span class="w-50 text-uppercase fs-6 fw-semibold"
                     >color</span
                   >
-                  <div class="d-flex flex-column w-50">
-                    <div class="d-flex gap-3 align-items-center">
+                  <div class="d-flex gap-3 w-50">
+                    <div class="d-flex gap-1 align-items-center flex-wrap">
                       <label for="red">Red</label>
                       <input
                         type="radio"
@@ -259,26 +277,22 @@
                   <span class="w-50 text-uppercase fs-6 fw-semibold"
                     >Quantity</span
                   >
-                  <div class="d-flex border align-items-center">
-                    <button
-                      id="decrease-btn"
-                      class="btn fs-4 my-0 py-0 btn-primary"
-                    >
-                      -
-                    </button>
-                    <span class="flex-grow-1 px-4 fs-6" id="quantity">0</span>
-                    <button
-                      id="increase-btn"
-                      class="btn fs-4 my-0 py-0 btn-primary"
-                    >
-                      +
-                    </button>
+                  <div class="w-50">
+                    <div class="quantity-area">
+                      <button id="decrease-btn" class="decrement-button">
+                        -
+                      </button>
+                      <span class="px-5 text-center fs-6" id="quantity">0</span>
+                      <button id="increase-btn" class="increment-button">
+                        +
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="d-flex">
                   <div class="price-wrapper w-50">
                     <span class="new-price">$48</span>
-                    <span class="discount">-20%</span>
+                    <small class="discount">-20%</small>
                     <span class="old-price">$170.00</span>
                   </div>
                   <div class="w-50 text-center">
@@ -361,7 +375,18 @@
       <section class="reviews-section">
         <div class="container">
           <div>
-            <h3 class="fs-4 text-center">Reviews</h3>
+            <h3 class="fs-4 text-center mb-3">Reviews</h3>
+            <div class="mb-4 reviews-sorting-section">
+              <label for="reviews-sorting">Sort By:</label>
+              <select name="reviews-sorting" id="reviews-sorting">
+                <option value="">Reviews Star</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
             <div class="reviews-wrapper">
               <div class="review_content">
                 <div class="clearfix add_bottom_10">
@@ -797,6 +822,8 @@
     <!-- COMMON SCRIPTS -->
     <script src="js/common_scripts.min.js"></script>
     <script src="js/main.js"></script>
+    <!-- SPECIFIC SCRIPTS -->
+    <script src="js/carousel-home.min.js"></script>
 
     <!-- Script -->
     <script src="js/product-details.js"></script>
