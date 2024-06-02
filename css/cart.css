@@ -87,8 +87,8 @@
 }
 
 .ti-trash {
+  color: rgba(236, 24, 24, 0.89);
   font-size: 20px;
-  font-weight: 900;
   transition: 0.3s ease-in-out;
 }
 
