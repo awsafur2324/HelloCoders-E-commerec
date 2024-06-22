@@ -199,6 +199,46 @@ a.btn_1 {
   font-family: themify;
   line-height: 1;
 }
+
+
+.menu_item {
+  font-weight: 600 !important;
+  margin: 0px 14px !important;
+  padding:  14px 2px !important;
+  transition: all 0.3s ease-in-out;
+  /* color: #DC3545 !important; */
+  position: relative;
+  font-size: 14px !important;
+  text-decoration: none;  
+}
+/* nav-menu */
+.menu_item::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 8px;
+  transition: 0.4s;
+}
+.menu_item:hover::after {
+  width: 100%;
+}
+.active_menu {
+  font-weight: bolder !important;
+}
+.active_menu::after {
+  content: "";   
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 8px;
+}
+/* nav menu ends */
+
 .ti-wand:before {
   content: "\e600";
 }
